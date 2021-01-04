@@ -1,0 +1,187 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2019  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 0 0 528 488)
+	(text "subsystemA" (rect 228 -1 281 11)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 472 20 484)(font "Arial" ))
+	(port
+		(pt 0 160)
+		(input)
+		(text "mapped_slave_burstcount" (rect 0 0 106 12)(font "Arial" (font_size 8)))
+		(text "mapped_slave_burstcount" (rect 4 149 142 160)(font "Arial" (font_size 8)))
+		(line (pt 0 160)(pt 224 160)(line_width 1))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "mapped_slave_writedata[31..0]" (rect 0 0 122 12)(font "Arial" (font_size 8)))
+		(text "mapped_slave_writedata[31..0]" (rect 4 165 178 176)(font "Arial" (font_size 8)))
+		(line (pt 0 176)(pt 224 176)(line_width 3))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "mapped_slave_address[9..0]" (rect 0 0 116 12)(font "Arial" (font_size 8)))
+		(text "mapped_slave_address[9..0]" (rect 4 181 160 192)(font "Arial" (font_size 8)))
+		(line (pt 0 192)(pt 224 192)(line_width 3))
+	)
+	(port
+		(pt 0 208)
+		(input)
+		(text "mapped_slave_write" (rect 0 0 82 12)(font "Arial" (font_size 8)))
+		(text "mapped_slave_write" (rect 4 197 112 208)(font "Arial" (font_size 8)))
+		(line (pt 0 208)(pt 224 208)(line_width 1))
+	)
+	(port
+		(pt 0 224)
+		(input)
+		(text "mapped_slave_read" (rect 0 0 82 12)(font "Arial" (font_size 8)))
+		(text "mapped_slave_read" (rect 4 213 106 224)(font "Arial" (font_size 8)))
+		(line (pt 0 224)(pt 224 224)(line_width 1))
+	)
+	(port
+		(pt 0 240)
+		(input)
+		(text "mapped_slave_byteenable[3..0]" (rect 0 0 127 12)(font "Arial" (font_size 8)))
+		(text "mapped_slave_byteenable[3..0]" (rect 4 229 178 240)(font "Arial" (font_size 8)))
+		(line (pt 0 240)(pt 224 240)(line_width 3))
+	)
+	(port
+		(pt 0 256)
+		(input)
+		(text "mapped_slave_debugaccess" (rect 0 0 116 12)(font "Arial" (font_size 8)))
+		(text "mapped_slave_debugaccess" (rect 4 245 148 256)(font "Arial" (font_size 8)))
+		(line (pt 0 256)(pt 224 256)(line_width 1))
+	)
+	(port
+		(pt 0 296)
+		(input)
+		(text "pheriphal_clk_clk" (rect 0 0 67 12)(font "Arial" (font_size 8)))
+		(text "pheriphal_clk_clk" (rect 4 285 106 296)(font "Arial" (font_size 8)))
+		(line (pt 0 296)(pt 224 296)(line_width 1))
+	)
+	(port
+		(pt 0 336)
+		(input)
+		(text "pheriphal_reset_reset_n" (rect 0 0 96 12)(font "Arial" (font_size 8)))
+		(text "pheriphal_reset_reset_n" (rect 4 325 142 336)(font "Arial" (font_size 8)))
+		(line (pt 0 336)(pt 224 336)(line_width 1))
+	)
+	(port
+		(pt 0 376)
+		(input)
+		(text "slave_clk_clk" (rect 0 0 54 12)(font "Arial" (font_size 8)))
+		(text "slave_clk_clk" (rect 4 365 82 376)(font "Arial" (font_size 8)))
+		(line (pt 0 376)(pt 224 376)(line_width 1))
+	)
+	(port
+		(pt 0 416)
+		(input)
+		(text "slave_reset_reset" (rect 0 0 73 12)(font "Arial" (font_size 8)))
+		(text "slave_reset_reset" (rect 4 405 106 416)(font "Arial" (font_size 8)))
+		(line (pt 0 416)(pt 224 416)(line_width 1))
+	)
+	(port
+		(pt 0 72)
+		(output)
+		(text "led_gpio_external_connection_export[7..0]" (rect 0 0 166 12)(font "Arial" (font_size 8)))
+		(text "led_gpio_external_connection_export[7..0]" (rect 4 61 250 72)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 224 72)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(output)
+		(text "mapped_slave_waitrequest" (rect 0 0 108 12)(font "Arial" (font_size 8)))
+		(text "mapped_slave_waitrequest" (rect 4 101 148 112)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 224 112)(line_width 1))
+	)
+	(port
+		(pt 0 128)
+		(output)
+		(text "mapped_slave_readdata[31..0]" (rect 0 0 122 12)(font "Arial" (font_size 8)))
+		(text "mapped_slave_readdata[31..0]" (rect 4 117 172 128)(font "Arial" (font_size 8)))
+		(line (pt 0 128)(pt 224 128)(line_width 3))
+	)
+	(port
+		(pt 0 144)
+		(output)
+		(text "mapped_slave_readdatavalid" (rect 0 0 116 12)(font "Arial" (font_size 8)))
+		(text "mapped_slave_readdatavalid" (rect 4 133 160 144)(font "Arial" (font_size 8)))
+		(line (pt 0 144)(pt 224 144)(line_width 1))
+	)
+	(port
+		(pt 0 456)
+		(output)
+		(text "tp_gpio_external_connection_export[7..0]" (rect 0 0 162 12)(font "Arial" (font_size 8)))
+		(text "tp_gpio_external_connection_export[7..0]" (rect 4 445 244 456)(font "Arial" (font_size 8)))
+		(line (pt 0 456)(pt 224 456)(line_width 3))
+	)
+	(drawing
+		(text "led_gpio_external_connection" (rect 53 43 274 99)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "export" (rect 229 67 494 144)(font "Arial" (color 0 0 0)))
+		(text "mapped_slave" (rect 141 83 354 179)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "waitrequest" (rect 229 107 524 224)(font "Arial" (color 0 0 0)))
+		(text "readdata" (rect 229 123 506 256)(font "Arial" (color 0 0 0)))
+		(text "readdatavalid" (rect 229 139 536 288)(font "Arial" (color 0 0 0)))
+		(text "burstcount" (rect 229 155 518 320)(font "Arial" (color 0 0 0)))
+		(text "writedata" (rect 229 171 512 352)(font "Arial" (color 0 0 0)))
+		(text "address" (rect 229 187 500 384)(font "Arial" (color 0 0 0)))
+		(text "write" (rect 229 203 488 416)(font "Arial" (color 0 0 0)))
+		(text "read" (rect 229 219 482 448)(font "Arial" (color 0 0 0)))
+		(text "byteenable" (rect 229 235 518 480)(font "Arial" (color 0 0 0)))
+		(text "debugaccess" (rect 229 251 524 512)(font "Arial" (color 0 0 0)))
+		(text "pheriphal_clk" (rect 148 267 374 547)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 229 291 476 592)(font "Arial" (color 0 0 0)))
+		(text "pheriphal_reset" (rect 134 307 358 627)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "reset_n" (rect 229 331 500 672)(font "Arial" (color 0 0 0)))
+		(text "slave_clk" (rect 171 347 396 707)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 229 371 476 752)(font "Arial" (color 0 0 0)))
+		(text "slave_reset" (rect 157 387 380 787)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "reset" (rect 229 411 488 832)(font "Arial" (color 0 0 0)))
+		(text "tp_gpio_external_connection" (rect 59 427 280 867)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "export" (rect 229 451 494 912)(font "Arial" (color 0 0 0)))
+		(text " subsystemA " (rect 470 472 1012 954)(font "Arial" ))
+		(line (pt 224 32)(pt 304 32)(line_width 1))
+		(line (pt 304 32)(pt 304 472)(line_width 1))
+		(line (pt 224 472)(pt 304 472)(line_width 1))
+		(line (pt 224 32)(pt 224 472)(line_width 1))
+		(line (pt 225 52)(pt 225 76)(line_width 1))
+		(line (pt 226 52)(pt 226 76)(line_width 1))
+		(line (pt 225 92)(pt 225 260)(line_width 1))
+		(line (pt 226 92)(pt 226 260)(line_width 1))
+		(line (pt 225 276)(pt 225 300)(line_width 1))
+		(line (pt 226 276)(pt 226 300)(line_width 1))
+		(line (pt 225 316)(pt 225 340)(line_width 1))
+		(line (pt 226 316)(pt 226 340)(line_width 1))
+		(line (pt 225 356)(pt 225 380)(line_width 1))
+		(line (pt 226 356)(pt 226 380)(line_width 1))
+		(line (pt 225 396)(pt 225 420)(line_width 1))
+		(line (pt 226 396)(pt 226 420)(line_width 1))
+		(line (pt 225 436)(pt 225 460)(line_width 1))
+		(line (pt 226 436)(pt 226 460)(line_width 1))
+		(line (pt 0 0)(pt 528 0)(line_width 1))
+		(line (pt 528 0)(pt 528 488)(line_width 1))
+		(line (pt 0 488)(pt 528 488)(line_width 1))
+		(line (pt 0 0)(pt 0 488)(line_width 1))
+	)
+)

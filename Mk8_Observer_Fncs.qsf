@@ -197,7 +197,7 @@ set_location_assignment PIN_E21 -to DDR3_A[0]
 set_global_assignment -name TIMING_ANALYZER_MULTICORNER_ANALYSIS ON
 set_global_assignment -name NUM_PARALLEL_PROCESSORS ALL
 set_global_assignment -name EXTERNAL_FLASH_FALLBACK_ADDRESS 00000000
-set_global_assignment -name INTERNAL_FLASH_UPDATE_MODE "SINGLE IMAGE WITH ERAM"
+set_global_assignment -name INTERNAL_FLASH_UPDATE_MODE "SINGLE COMP IMAGE"
 set_location_assignment PIN_B3 -to PICO_1_D0
 set_location_assignment PIN_C5 -to PICO_1_D1
 set_location_assignment PIN_C2 -to PICO_1_D2
@@ -454,17 +454,12 @@ set_instance_assignment -name ENABLE_BENEFICIAL_SKEW_OPTIMIZATION_FOR_NON_GLOBAL
 set_instance_assignment -name IO_STANDARD "SSTL-15" -to DDR3_A[15]
 set_instance_assignment -name IO_STANDARD "SSTL-15" -to DDR3_A
 set_instance_assignment -name IO_STANDARD "2.5 V SCHMITT TRIGGER" -to GPIOB_D8
-set_global_assignment -name SEARCH_PATH designfiles/4b5b
-set_global_assignment -name SEARCH_PATH ../../../coildriver_library/eb_fpga_libraries/general
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name QIP_FILE software/Mk7_ObserverFnc/mem_init/meminit.qip
-set_global_assignment -name QIP_FILE Mk7_Observer_CPU/synthesis/Mk7_Observer_CPU.qip
-set_global_assignment -name QIP_FILE ip/pll/synthesis/pll.qip
-set_global_assignment -name SDC_FILE Mk7_ObserverFncs.sdc
+set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIOA_D36
+set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIOA_D38
+set_global_assignment -name QIP_FILE ip/CRC_RAM_v1/synthesis/CRC_RAM_v1.qip
+set_global_assignment -name QIP_FILE Mk8_Observer_CPU/synthesis/Mk8_Observer_CPU.qip
+set_global_assignment -name SDC_FILE Mk8_ObserverFncs.sdc
 set_global_assignment -name QIP_FILE ip/pll_2/synthesis/pll_2.qip
-set_global_assignment -name QIP_FILE ip/CRC_RAM/synthesis/CRC_RAM.qip
 set_global_assignment -name BDF_FILE DesignFiles/CPU_DesignFiles/CLK_generation.bdf
 set_global_assignment -name BDF_FILE ObserverFncs_TopLevel.bdf
 set_global_assignment -name BDF_FILE DesignFiles/CPU_DesignFiles/CPU_Comms_Blk.bdf
@@ -474,16 +469,24 @@ set_global_assignment -name AHDL_FILE DesignFiles/4B5B/cdr_decision_v4.tdf
 set_global_assignment -name BDF_FILE DesignFiles/LoopDataController/LoopDataController.bdf
 set_global_assignment -name BDF_FILE DesignFiles/LoopDataController/DualLoop4B5BChannels.bdf
 set_global_assignment -name AHDL_FILE DesignFiles/LoopDataController/FIFO_4B5B_Controller.tdf
-set_global_assignment -name AHDL_FILE DesignFiles/4B5B/Short4B5BPacketGenerationFncv1.tdf
 set_global_assignment -name AHDL_FILE DesignFiles/4B5B/Encoder4B_5B_LookUpTable.tdf
-set_global_assignment -name BDF_FILE ../../../CoilDriver_Library/EB_FPGA_Libraries/General/Single_High_Pulse.bdf
 set_global_assignment -name AHDL_FILE DesignFiles/4B5B/LVDS_StreamingByteDataHandler_v7.tdf
-set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIOA_D36
-set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIOA_D38
 set_global_assignment -name BDF_FILE DesignFiles/HybridPatternData/DualFast4B5BChannels.bdf
 set_global_assignment -name BDF_FILE DesignFiles/HybridPatternData/SingleFastLVDS_StreamControllerv6.bdf
 set_global_assignment -name AHDL_FILE DesignFiles/4B5B/cdr_decision_v5.tdf
 set_global_assignment -name AHDL_FILE DesignFiles/HybridPatternData/DAC_8811_Driver.tdf
 set_global_assignment -name BDF_FILE DesignFiles/HybridPatternData/ChannelFeedbackFast4B5BChannels.bdf
 set_global_assignment -name BDF_FILE DesignFiles/CPU_DesignFiles/TempFIFO_Stream.bdf
+set_global_assignment -name QIP_FILE ip/FIFO_pll/synthesis/FIFO_pll.qip
+set_global_assignment -name AHDL_FILE DesignFiles/4B5B/4B5BPacketGenerationFncv1.tdf
+set_global_assignment -name BDF_FILE DesignFiles/CPU_DesignFiles/CRC_RAM_Wrapper.bdf
+set_global_assignment -name BDF_FILE DesignFiles/CPU_DesignFiles/CRC_RAM_Handler.bdf
+set_global_assignment -name BDF_FILE DesignFiles/HybridPatternData/NonIniSingleFastLVDS_StreamControllerv1.bdf
+set_global_assignment -name SEARCH_PATH ../../../../coildriver_library/eb_fpga_libraries/serialencoding/release_5/designfiles/fixed8bytedesigns
+set_global_assignment -name SEARCH_PATH designfiles/cpu_designfiles
+set_global_assignment -name SEARCH_PATH ../../../../coildriver_library/eb_fpga_libraries/general
+set_global_assignment -name SEARCH_PATH designfiles/4b5b
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

@@ -1,0 +1,39 @@
+	Mk8_Observer_CPU u0 (
+		.altpll_sys_areset_conduit_export                   (<connected-to-altpll_sys_areset_conduit_export>),                   //               altpll_sys_areset_conduit.export
+		.altpll_sys_locked_conduit_export                   (<connected-to-altpll_sys_locked_conduit_export>),                   //               altpll_sys_locked_conduit.export
+		.clk_clk                                            (<connected-to-clk_clk>),                                            //                                     clk.clk
+		.clk_100m_clk                                       (<connected-to-clk_100m_clk>),                                       //                                clk_100m.clk
+		.clk_200m_clk                                       (<connected-to-clk_200m_clk>),                                       //                                clk_200m.clk
+		.cpu_clk_clk                                        (<connected-to-cpu_clk_clk>),                                        //                                 cpu_clk.clk
+		.external_bus_bridge_external_interface_acknowledge (<connected-to-external_bus_bridge_external_interface_acknowledge>), //  external_bus_bridge_external_interface.acknowledge
+		.external_bus_bridge_external_interface_irq         (<connected-to-external_bus_bridge_external_interface_irq>),         //                                        .irq
+		.external_bus_bridge_external_interface_address     (<connected-to-external_bus_bridge_external_interface_address>),     //                                        .address
+		.external_bus_bridge_external_interface_bus_enable  (<connected-to-external_bus_bridge_external_interface_bus_enable>),  //                                        .bus_enable
+		.external_bus_bridge_external_interface_byte_enable (<connected-to-external_bus_bridge_external_interface_byte_enable>), //                                        .byte_enable
+		.external_bus_bridge_external_interface_rw          (<connected-to-external_bus_bridge_external_interface_rw>),          //                                        .rw
+		.external_bus_bridge_external_interface_write_data  (<connected-to-external_bus_bridge_external_interface_write_data>),  //                                        .write_data
+		.external_bus_bridge_external_interface_read_data   (<connected-to-external_bus_bridge_external_interface_read_data>),   //                                        .read_data
+		.parameter_clk_1_clk                                (<connected-to-parameter_clk_1_clk>),                                //                         parameter_clk_1.clk
+		.parameter_sys_parameter_loop_gpio_in_port          (<connected-to-parameter_sys_parameter_loop_gpio_in_port>),          //       parameter_sys_parameter_loop_gpio.in_port
+		.parameter_sys_parameter_loop_gpio_out_port         (<connected-to-parameter_sys_parameter_loop_gpio_out_port>),         //                                        .out_port
+		.parameter_sys_parameter_rx_ram_s2_address          (<connected-to-parameter_sys_parameter_rx_ram_s2_address>),          //       parameter_sys_parameter_rx_ram_s2.address
+		.parameter_sys_parameter_rx_ram_s2_chipselect       (<connected-to-parameter_sys_parameter_rx_ram_s2_chipselect>),       //                                        .chipselect
+		.parameter_sys_parameter_rx_ram_s2_clken            (<connected-to-parameter_sys_parameter_rx_ram_s2_clken>),            //                                        .clken
+		.parameter_sys_parameter_rx_ram_s2_write            (<connected-to-parameter_sys_parameter_rx_ram_s2_write>),            //                                        .write
+		.parameter_sys_parameter_rx_ram_s2_readdata         (<connected-to-parameter_sys_parameter_rx_ram_s2_readdata>),         //                                        .readdata
+		.parameter_sys_parameter_rx_ram_s2_writedata        (<connected-to-parameter_sys_parameter_rx_ram_s2_writedata>),        //                                        .writedata
+		.parameter_sys_parameter_rx_ram_s2_byteenable       (<connected-to-parameter_sys_parameter_rx_ram_s2_byteenable>),       //                                        .byteenable
+		.parameter_sys_parameter_tx_ram_s2_address          (<connected-to-parameter_sys_parameter_tx_ram_s2_address>),          //       parameter_sys_parameter_tx_ram_s2.address
+		.parameter_sys_parameter_tx_ram_s2_chipselect       (<connected-to-parameter_sys_parameter_tx_ram_s2_chipselect>),       //                                        .chipselect
+		.parameter_sys_parameter_tx_ram_s2_clken            (<connected-to-parameter_sys_parameter_tx_ram_s2_clken>),            //                                        .clken
+		.parameter_sys_parameter_tx_ram_s2_write            (<connected-to-parameter_sys_parameter_tx_ram_s2_write>),            //                                        .write
+		.parameter_sys_parameter_tx_ram_s2_readdata         (<connected-to-parameter_sys_parameter_tx_ram_s2_readdata>),         //                                        .readdata
+		.parameter_sys_parameter_tx_ram_s2_writedata        (<connected-to-parameter_sys_parameter_tx_ram_s2_writedata>),        //                                        .writedata
+		.parameter_sys_parameter_tx_ram_s2_byteenable       (<connected-to-parameter_sys_parameter_tx_ram_s2_byteenable>),       //                                        .byteenable
+		.parameter_sys_reset_out_export                     (<connected-to-parameter_sys_reset_out_export>),                     //                 parameter_sys_reset_out.export
+		.pheriphals_led_gpio_external_connection_export     (<connected-to-pheriphals_led_gpio_external_connection_export>),     // pheriphals_led_gpio_external_connection.export
+		.pheriphals_tp_gpio_external_connection_export      (<connected-to-pheriphals_tp_gpio_external_connection_export>),      //  pheriphals_tp_gpio_external_connection.export
+		.reset_reset_n                                      (<connected-to-reset_reset_n>),                                      //                                   reset.reset_n
+		.reset_parameter_reset_n                            (<connected-to-reset_parameter_reset_n>)                             //                         reset_parameter.reset_n
+	);
+

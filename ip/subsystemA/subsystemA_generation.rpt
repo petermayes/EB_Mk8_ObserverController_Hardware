@@ -1,0 +1,92 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate C:\DesignData\CoilDriverDesigns\Mk_8\Observer_Controller\Hardware\EB_Mk8_ObserverController_Hardware\ip\subsystemA.qsys --block-symbol-file --output-directory=C:\DesignData\CoilDriverDesigns\Mk_8\Observer_Controller\Hardware\EB_Mk8_ObserverController_Hardware\ip\subsystemA --family="MAX 10" --part=10M50DAF484I7G
+Progress: Loading ip/subsystemA.qsys
+Progress: Reading input file
+Progress: Adding DDR3_status_GPIO [altera_avalon_pio 18.1]
+Progress: Parameterizing module DDR3_status_GPIO
+Progress: Adding LED_GPIO [altera_avalon_pio 18.1]
+Progress: Parameterizing module LED_GPIO
+Progress: Adding LVDS_gpio [altera_avalon_pio 18.1]
+Progress: Parameterizing module LVDS_gpio
+Progress: Adding TP_GPIO [altera_avalon_pio 18.1]
+Progress: Parameterizing module TP_GPIO
+Progress: Adding clk_0 [clock_source 18.1]
+Progress: Parameterizing module clk_0
+Progress: Adding dual_boot_0 [altera_dual_boot 18.1]
+Progress: Parameterizing module dual_boot_0
+Progress: Adding ft600_gpio [altera_avalon_pio 18.1]
+Progress: Parameterizing module ft600_gpio
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 18.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding mm_clock_crossing_bridge_0 [altera_avalon_mm_clock_crossing_bridge 18.1]
+Progress: Parameterizing module mm_clock_crossing_bridge_0
+Progress: Adding timer_0 [altera_avalon_timer 18.1]
+Progress: Parameterizing module timer_0
+Progress: Adding timer_1 [altera_avalon_timer 18.1]
+Progress: Parameterizing module timer_1
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate C:\DesignData\CoilDriverDesigns\Mk_8\Observer_Controller\Hardware\EB_Mk8_ObserverController_Hardware\ip\subsystemA.qsys --synthesis=VERILOG --output-directory=C:\DesignData\CoilDriverDesigns\Mk_8\Observer_Controller\Hardware\EB_Mk8_ObserverController_Hardware\ip\subsystemA\synthesis --family="MAX 10" --part=10M50DAF484I7G
+Progress: Loading ip/subsystemA.qsys
+Progress: Reading input file
+Progress: Adding DDR3_status_GPIO [altera_avalon_pio 18.1]
+Progress: Parameterizing module DDR3_status_GPIO
+Progress: Adding LED_GPIO [altera_avalon_pio 18.1]
+Progress: Parameterizing module LED_GPIO
+Progress: Adding LVDS_gpio [altera_avalon_pio 18.1]
+Progress: Parameterizing module LVDS_gpio
+Progress: Adding TP_GPIO [altera_avalon_pio 18.1]
+Progress: Parameterizing module TP_GPIO
+Progress: Adding clk_0 [clock_source 18.1]
+Progress: Parameterizing module clk_0
+Progress: Adding dual_boot_0 [altera_dual_boot 18.1]
+Progress: Parameterizing module dual_boot_0
+Progress: Adding ft600_gpio [altera_avalon_pio 18.1]
+Progress: Parameterizing module ft600_gpio
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 18.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding mm_clock_crossing_bridge_0 [altera_avalon_mm_clock_crossing_bridge 18.1]
+Progress: Parameterizing module mm_clock_crossing_bridge_0
+Progress: Adding timer_0 [altera_avalon_timer 18.1]
+Progress: Parameterizing module timer_0
+Progress: Adding timer_1 [altera_avalon_timer 18.1]
+Progress: Parameterizing module timer_1
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: subsystemA: Generating subsystemA "subsystemA" for QUARTUS_SYNTH
+Info: LED_GPIO: Starting RTL generation for module 'subsystemA_LED_GPIO'
+Info: LED_GPIO:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=subsystemA_LED_GPIO --dir=C:/Users/PETE~1.MAY/AppData/Local/Temp/alt8631_6099402999372484629.dir/0002_LED_GPIO_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/PETE~1.MAY/AppData/Local/Temp/alt8631_6099402999372484629.dir/0002_LED_GPIO_gen//subsystemA_LED_GPIO_component_configuration.pl  --do_build_sim=0  ]
+Info: LED_GPIO: Done RTL generation for module 'subsystemA_LED_GPIO'
+Info: LED_GPIO: "subsystemA" instantiated altera_avalon_pio "LED_GPIO"
+Info: mm_clock_crossing_bridge_0: "subsystemA" instantiated altera_avalon_mm_clock_crossing_bridge "mm_clock_crossing_bridge_0"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "subsystemA" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: rst_controller: "subsystemA" instantiated altera_reset_controller "rst_controller"
+Info: mm_clock_crossing_bridge_0_m0_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "mm_clock_crossing_bridge_0_m0_translator"
+Info: TP_GPIO_s1_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "TP_GPIO_s1_translator"
+Info: mm_clock_crossing_bridge_0_m0_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "mm_clock_crossing_bridge_0_m0_agent"
+Info: TP_GPIO_s1_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "TP_GPIO_s1_agent"
+Info: TP_GPIO_s1_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "TP_GPIO_s1_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: mm_clock_crossing_bridge_0_m0_limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "mm_clock_crossing_bridge_0_m0_limiter"
+Info: Reusing file C:/DesignData/CoilDriverDesigns/Mk_8/Observer_Controller/Hardware/EB_Mk8_ObserverController_Hardware/ip/subsystemA/synthesis/submodules/altera_avalon_sc_fifo.v
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/DesignData/CoilDriverDesigns/Mk_8/Observer_Controller/Hardware/EB_Mk8_ObserverController_Hardware/ip/subsystemA/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: subsystemA: Done "subsystemA" with 19 modules, 29 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

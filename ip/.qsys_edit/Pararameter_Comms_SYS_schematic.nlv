@@ -1,0 +1,29 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst Pararameter_Comms_SYS.mm_clock_crossing_bridge_0 -pg 1 -lvl 2 -y 470
+preplace inst Pararameter_Comms_SYS.Parameter_GPIO -pg 1 -lvl 3 -y 30
+preplace inst Pararameter_Comms_SYS.clk_0 -pg 1 -lvl 1 -y 410
+preplace inst Pararameter_Comms_SYS.clk_1 -pg 1 -lvl 2 -y 280
+preplace inst Pararameter_Comms_SYS.Parameter_TX_RAM -pg 1 -lvl 3 -y 290
+preplace inst Pararameter_Comms_SYS.Reset -pg 1 -lvl 3 -y 430
+preplace inst Pararameter_Comms_SYS -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst Pararameter_Comms_SYS.Parameter_RX_RAM -pg 1 -lvl 3 -y 150
+preplace netloc EXPORT<net_container>Pararameter_Comms_SYS</net_container>(SLAVE)Pararameter_Comms_SYS.slave_reset,(SLAVE)mm_clock_crossing_bridge_0.s0_reset) 1 0 2 NJ 560 NJ
+preplace netloc EXPORT<net_container>Pararameter_Comms_SYS</net_container>(SLAVE)clk_0.clk_in_reset,(SLAVE)Pararameter_Comms_SYS.pheriphal_reset) 1 0 1 NJ
+preplace netloc FAN_OUT<net_container>Pararameter_Comms_SYS</net_container>(SLAVE)Parameter_TX_RAM.clk1,(MASTER)clk_0.clk,(SLAVE)Parameter_GPIO.clk,(SLAVE)Reset.clk,(SLAVE)mm_clock_crossing_bridge_0.m0_clk,(SLAVE)Parameter_RX_RAM.clk1) 1 1 2 400 420 690
+preplace netloc EXPORT<net_container>Pararameter_Comms_SYS</net_container>(SLAVE)mm_clock_crossing_bridge_0.s0_clk,(SLAVE)Pararameter_Comms_SYS.slave_clk) 1 0 2 NJ 540 NJ
+preplace netloc EXPORT<net_container>Pararameter_Comms_SYS</net_container>(SLAVE)Pararameter_Comms_SYS.mapped_slave,(SLAVE)mm_clock_crossing_bridge_0.s0) 1 0 2 NJ 520 NJ
+preplace netloc EXPORT<net_container>Pararameter_Comms_SYS</net_container>(SLAVE)clk_1.clk_in,(SLAVE)Pararameter_Comms_SYS.parameter_clk) 1 0 2 NJ 290 NJ
+preplace netloc EXPORT<net_container>Pararameter_Comms_SYS</net_container>(SLAVE)Pararameter_Comms_SYS.pheriphal_clk,(SLAVE)clk_0.clk_in) 1 0 1 NJ
+preplace netloc EXPORT<net_container>Pararameter_Comms_SYS</net_container>(SLAVE)Pararameter_Comms_SYS.parameter_loop_gpio_irq,(SLAVE)Parameter_GPIO.irq) 1 0 3 NJ 80 NJ 80 NJ
+preplace netloc FAN_OUT<net_container>Pararameter_Comms_SYS</net_container>(MASTER)clk_0.clk_reset,(SLAVE)Reset.reset,(SLAVE)Parameter_TX_RAM.reset1,(SLAVE)Parameter_RX_RAM.reset1,(SLAVE)Parameter_GPIO.reset,(SLAVE)mm_clock_crossing_bridge_0.m0_reset) 1 1 2 360 440 630
+preplace netloc EXPORT<net_container>Pararameter_Comms_SYS</net_container>(SLAVE)Pararameter_Comms_SYS.parameter_reset,(SLAVE)clk_1.clk_in_reset) 1 0 2 NJ 310 NJ
+preplace netloc FAN_OUT<net_container>Pararameter_Comms_SYS</net_container>(SLAVE)Parameter_RX_RAM.clk2,(SLAVE)Parameter_TX_RAM.clk2,(MASTER)clk_1.clk) 1 2 1 670
+preplace netloc EXPORT<net_container>Pararameter_Comms_SYS</net_container>(SLAVE)Parameter_RX_RAM.s2,(SLAVE)Pararameter_Comms_SYS.parameter_rx_ram_s2) 1 0 3 NJ 260 NJ 260 NJ
+preplace netloc EXPORT<net_container>Pararameter_Comms_SYS</net_container>(SLAVE)Parameter_TX_RAM.s2,(SLAVE)Pararameter_Comms_SYS.parameter_tx_ram_s2) 1 0 3 NJ 400 NJ 400 NJ
+preplace netloc EXPORT<net_container>Pararameter_Comms_SYS</net_container>(SLAVE)Pararameter_Comms_SYS.reset_out,(SLAVE)Reset.external_connection) 1 0 3 NJ 480 NJ 460 NJ
+preplace netloc FAN_OUT<net_container>Pararameter_Comms_SYS</net_container>(MASTER)clk_1.clk_reset,(SLAVE)Parameter_RX_RAM.reset2,(SLAVE)Parameter_TX_RAM.reset2) 1 2 1 650
+preplace netloc FAN_OUT<net_container>Pararameter_Comms_SYS</net_container>(MASTER)mm_clock_crossing_bridge_0.m0,(SLAVE)Parameter_RX_RAM.s1,(SLAVE)Parameter_GPIO.s1,(SLAVE)Reset.s1,(SLAVE)Parameter_TX_RAM.s1) 1 2 1 710
+preplace netloc EXPORT<net_container>Pararameter_Comms_SYS</net_container>(SLAVE)Pararameter_Comms_SYS.parameter_loop_gpio,(SLAVE)Parameter_GPIO.external_connection) 1 0 3 NJ 60 NJ 60 NJ
+levelinfo -pg 1 0 150 920
+levelinfo -hier Pararameter_Comms_SYS 160 190 460 760 910

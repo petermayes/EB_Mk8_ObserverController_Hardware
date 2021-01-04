@@ -1,0 +1,21 @@
+	component TimerSYS is
+		port (
+			mapped_slave_waitrequest   : out std_logic;                                        -- waitrequest
+			mapped_slave_readdata      : out std_logic_vector(31 downto 0);                    -- readdata
+			mapped_slave_readdatavalid : out std_logic;                                        -- readdatavalid
+			mapped_slave_burstcount    : in  std_logic_vector(0 downto 0)  := (others => 'X'); -- burstcount
+			mapped_slave_writedata     : in  std_logic_vector(31 downto 0) := (others => 'X'); -- writedata
+			mapped_slave_address       : in  std_logic_vector(9 downto 0)  := (others => 'X'); -- address
+			mapped_slave_write         : in  std_logic                     := 'X';             -- write
+			mapped_slave_read          : in  std_logic                     := 'X';             -- read
+			mapped_slave_byteenable    : in  std_logic_vector(3 downto 0)  := (others => 'X'); -- byteenable
+			mapped_slave_debugaccess   : in  std_logic                     := 'X';             -- debugaccess
+			pheriphal_clk_clk          : in  std_logic                     := 'X';             -- clk
+			pheriphal_reset_reset_n    : in  std_logic                     := 'X';             -- reset_n
+			slave_clk_clk              : in  std_logic                     := 'X';             -- clk
+			slave_reset_reset          : in  std_logic                     := 'X';             -- reset
+			timer_0_irq_irq            : out std_logic;                                        -- irq
+			timer_1_irq_irq            : out std_logic                                         -- irq
+		);
+	end component TimerSYS;
+

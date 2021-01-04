@@ -1,0 +1,170 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2019  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 16 16 440 304)
+	(text "CPU_Comms_Blk" (rect 5 0 108 19)(font "Intel Clear" (font_size 8)))
+	(text "inst" (rect 8 267 24 284)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Reset_n" (rect 0 0 47 19)(font "Intel Clear" (font_size 8)))
+		(text "Reset_n" (rect 21 27 68 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "ChannelFeedbackRX[4..0]" (rect 0 0 152 19)(font "Intel Clear" (font_size 8)))
+		(text "ChannelFeedbackRX[4..0]" (rect 21 43 173 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Single_Ended_Loop_RX[1..0]" (rect 0 0 172 19)(font "Intel Clear" (font_size 8)))
+		(text "Single_Ended_Loop_RX[1..0]" (rect 21 59 193 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "Loop_RX_Data[1..0]" (rect 0 0 119 19)(font "Intel Clear" (font_size 8)))
+		(text "Loop_RX_Data[1..0]" (rect 21 75 140 94)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "SysCLK" (rect 0 0 44 19)(font "Intel Clear" (font_size 8)))
+		(text "SysCLK" (rect 21 91 65 110)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 96)(pt 16 96))
+	)
+	(port
+		(pt 424 32)
+		(output)
+		(text "CPU_PLL_Locked" (rect 0 0 105 19)(font "Intel Clear" (font_size 8)))
+		(text "CPU_PLL_Locked" (rect 298 27 403 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 424 32)(pt 408 32))
+	)
+	(port
+		(pt 424 48)
+		(output)
+		(text "ChannelFeedbackCRC_Flags[4..0]" (rect 0 0 198 19)(font "Intel Clear" (font_size 8)))
+		(text "ChannelFeedbackCRC_Flags[4..0]" (rect 205 43 403 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 424 48)(pt 408 48)(line_width 3))
+	)
+	(port
+		(pt 424 64)
+		(output)
+		(text "Loop_TX_Data[1..0]" (rect 0 0 119 19)(font "Intel Clear" (font_size 8)))
+		(text "Loop_TX_Data[1..0]" (rect 284 59 403 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 424 64)(pt 408 64)(line_width 3))
+	)
+	(port
+		(pt 424 80)
+		(output)
+		(text "LoopCRC_Success_Flag[1..0]" (rect 0 0 169 19)(font "Intel Clear" (font_size 8)))
+		(text "LoopCRC_Success_Flag[1..0]" (rect 234 75 403 94)(font "Intel Clear" (font_size 8)))
+		(line (pt 424 80)(pt 408 80)(line_width 3))
+	)
+	(port
+		(pt 424 96)
+		(output)
+		(text "Debug_TX_UART" (rect 0 0 103 19)(font "Intel Clear" (font_size 8)))
+		(text "Debug_TX_UART" (rect 300 91 403 110)(font "Intel Clear" (font_size 8)))
+		(line (pt 424 96)(pt 408 96))
+	)
+	(port
+		(pt 424 112)
+		(output)
+		(text "FIFO_CSR_Data[31..0]" (rect 0 0 133 19)(font "Intel Clear" (font_size 8)))
+		(text "FIFO_CSR_Data[31..0]" (rect 270 107 403 126)(font "Intel Clear" (font_size 8)))
+		(line (pt 424 112)(pt 408 112)(line_width 3))
+	)
+	(port
+		(pt 424 128)
+		(output)
+		(text "BufferedLoopInterruptFlag[1..0]" (rect 0 0 188 19)(font "Intel Clear" (font_size 8)))
+		(text "BufferedLoopInterruptFlag[1..0]" (rect 215 123 403 142)(font "Intel Clear" (font_size 8)))
+		(line (pt 424 128)(pt 408 128)(line_width 3))
+	)
+	(port
+		(pt 424 144)
+		(output)
+		(text "Loop_Triggers[1..0]" (rect 0 0 115 19)(font "Intel Clear" (font_size 8)))
+		(text "Loop_Triggers[1..0]" (rect 288 139 403 158)(font "Intel Clear" (font_size 8)))
+		(line (pt 424 144)(pt 408 144)(line_width 3))
+	)
+	(port
+		(pt 424 160)
+		(output)
+		(text "LED_GPIO[7..0]" (rect 0 0 92 19)(font "Intel Clear" (font_size 8)))
+		(text "LED_GPIO[7..0]" (rect 311 155 403 174)(font "Intel Clear" (font_size 8)))
+		(line (pt 424 160)(pt 408 160)(line_width 3))
+	)
+	(port
+		(pt 424 176)
+		(output)
+		(text "TP_GPIO[7..0]" (rect 0 0 84 19)(font "Intel Clear" (font_size 8)))
+		(text "TP_GPIO[7..0]" (rect 319 171 403 190)(font "Intel Clear" (font_size 8)))
+		(line (pt 424 176)(pt 408 176)(line_width 3))
+	)
+	(port
+		(pt 424 192)
+		(output)
+		(text "CRC_Failure_Flag[1..0]" (rect 0 0 134 19)(font "Intel Clear" (font_size 8)))
+		(text "CRC_Failure_Flag[1..0]" (rect 269 187 403 206)(font "Intel Clear" (font_size 8)))
+		(line (pt 424 192)(pt 408 192)(line_width 3))
+	)
+	(port
+		(pt 424 208)
+		(output)
+		(text "XY_CRC_Success_Flag[2..0]" (rect 0 0 164 19)(font "Intel Clear" (font_size 8)))
+		(text "XY_CRC_Success_Flag[2..0]" (rect 239 203 403 222)(font "Intel Clear" (font_size 8)))
+		(line (pt 424 208)(pt 408 208)(line_width 3))
+	)
+	(port
+		(pt 424 224)
+		(output)
+		(text "ExternalInterfaceAddr[7..0]" (rect 0 0 159 19)(font "Intel Clear" (font_size 8)))
+		(text "ExternalInterfaceAddr[7..0]" (rect 244 219 403 238)(font "Intel Clear" (font_size 8)))
+		(line (pt 424 224)(pt 408 224)(line_width 3))
+	)
+	(port
+		(pt 424 240)
+		(output)
+		(text "ExternalWriteData[7..0]" (rect 0 0 138 19)(font "Intel Clear" (font_size 8)))
+		(text "ExternalWriteData[7..0]" (rect 265 235 403 254)(font "Intel Clear" (font_size 8)))
+		(line (pt 424 240)(pt 408 240)(line_width 3))
+	)
+	(port
+		(pt 424 256)
+		(output)
+		(text "CRC_RAM_Write" (rect 0 0 97 19)(font "Intel Clear" (font_size 8)))
+		(text "CRC_RAM_Write" (rect 306 251 403 270)(font "Intel Clear" (font_size 8)))
+		(line (pt 424 256)(pt 408 256))
+	)
+	(drawing
+		(rectangle (rect 16 16 408 272))
+	)
+)
